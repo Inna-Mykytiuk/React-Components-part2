@@ -30,7 +30,7 @@ export const Gallery = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [total_results, setTotalRes] = useState(0);
   // const [showModal, setShowModal] = useState(false);
-  const [activeImage, setActiveImage] = useState(null);
+  // const [activeImage, setActiveImage] = useState(null);
 
   useEffect(() => {
     if (!query) return;

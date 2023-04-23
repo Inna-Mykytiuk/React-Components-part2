@@ -40,7 +40,3 @@ export const SearchForm = ({ onSubmit }) => {
     </div>
   );
 };
-
-{
-  /* <SearchFormStyled onSubmit={handleSubmit}></SearchFormStyled> */
-}
