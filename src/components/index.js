@@ -3,9 +3,10 @@ export * from 'components/Button/Button.styled';
 export * from 'components/Button/Button';
 export * from 'components/Container/Container.styled';
 export * from 'components/Grid/Grid.styled';
-export * from 'components/Grid/Grid';
-export * from 'components/GridItem/GridItem';
+export * from 'components/GalleryList/GalleryList';
+
 export * from 'components/GridItem/GridItem.styled';
+export * from 'components/GalleryItem/GalleryItem';
 
 export * from 'components/Header/Header';
 export * from 'components/Header/Header.styled';

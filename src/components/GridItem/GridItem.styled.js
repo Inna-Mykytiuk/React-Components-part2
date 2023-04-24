@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 
-export const ImageGalleryItem = styled.li`
+export const GridItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
 
-export const ImageCard = styled.img`
+export const CardItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
