@@ -18,7 +18,7 @@ export const getImages = async (query, page) => {
   // Виклик Axios з параметрами запиту
   try {
     const response = await axios.get('/search', { params });
-    return response.data.photos;
+    return response.data;
   } catch (error) {
     // Якщо запит не вдалося, поверніть помилку
     console.error(error);

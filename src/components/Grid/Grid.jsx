@@ -11,8 +11,8 @@ export const Grid = ({ photos, openModal }) => {
           // openModal={openModal}
           key={photo.id}
           alt={photo.tags}
-          smallImage={photo.small}
-          largeImage={photo.large}
+          smallImage={photo.smallImage}
+          largeImage={photo.largeImage}
         />
       ))}
     </GridMain>

@@ -4,7 +4,6 @@ export * from 'components/Button/Button';
 export * from 'components/Container/Container.styled';
 export * from 'components/Grid/Grid.styled';
 export * from 'components/Grid/Grid';
-export * from 'components/Grid/Grid';
 export * from 'components/GridItem/GridItem';
 export * from 'components/GridItem/GridItem.styled';
 

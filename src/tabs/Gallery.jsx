@@ -126,7 +126,7 @@ export const Gallery = () => {
           toast.error('There are no images for your request');
           return;
         }
-        const results = photos.map(({ alt, id, small, large }) => ({
+        const results = photos.map(({ alt, id, src: { small, large } }) => ({
           alt,
           id,
           smallImage: small,

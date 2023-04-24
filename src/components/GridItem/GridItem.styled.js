@@ -7,7 +7,7 @@ export const ImageGalleryItem = styled.li`
   justify-content: center;
 `;
 
-export const ImageCard = styled.div`
+export const ImageCard = styled.img`
   display: flex;
   flex-direction: column;
   align-items: center;

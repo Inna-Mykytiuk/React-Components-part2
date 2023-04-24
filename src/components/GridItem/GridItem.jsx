@@ -1,11 +1,11 @@
 import { ImageGalleryItem, ImageCard } from './GridItem.styled';
 // import { ImageCard } from '../ImageCard/ImageCard.styled';
 
-export const GridItem = ({ large, alt }) => {
+export const GridItem = ({ smallImage, largeImage, alt }) => {
   return (
     <ImageGalleryItem>
       <ImageCard
-        src={large}
+        src={largeImage}
         alt={alt}
         loading="lazy"
         width={480}
