@@ -1,13 +1,9 @@
-// import { Component } from 'react';
 import { nanoid } from 'nanoid';
-// import { useState } from 'react';
-import { Grid, GridItem, SearchForm, EditForm, Text } from 'components';
+import { Grid, GridItem, SearchForm } from 'components';
 import { Todo } from 'components/Todo/Todo';
 import { useLocalStorage } from 'react-use';
 
 export const Todos = () => {
-  // const [todos, setTodos] = useState([]);
-  // const [localStor, setLocalStor] = useLocalStorage('todos', []);
   const [todos, setTodos] = useLocalStorage('todos', []);
 
   const deleteTodo = todoId => {
@@ -20,9 +16,6 @@ export const Todos = () => {
       text,
     };
 
-    // setTodos(prevTodos => {
-    //   return [...prevTodos, todoObj];
-    // });
     setTodos([...todos, todoObj]);
   };
   return (
