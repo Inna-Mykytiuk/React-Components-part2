@@ -14,11 +14,17 @@ export const SearchForm = ({ onSubmit }) => {
   const handleSubmit = event => {
     event.preventDefault();
 
+    const valueSearch = event.target.search.value;
+    if (!valueSearch.trim()) {
+      return 'please type something';
+    }
+
     // if (!query.trim()) {
     //   return toast.warning('please type something');
     // }
-
-    onSubmit(query);
+    onSubmit(query, valueSearch);
+    // onSubmit(valueSearch);
+    event.target.reset();
   };
 
   return (
@@ -30,10 +36,11 @@ export const SearchForm = ({ onSubmit }) => {
         </FormBtn>
         <InputSearch
           type="text"
+          name="search"
           autoComplete="off"
           autoFocus
           placeholder="Search images and photos"
-          value={query}
+          // value={query}
           onChange={onChange}
         />
       </SearchFormStyled>
